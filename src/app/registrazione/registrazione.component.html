@@ -1,0 +1,11 @@
+<h1>Pagina registrazione 2</h1>
+<div>
+	<h4>Esegui la registrazione!</h4>
+	<input type="text" placeholder="Nome utente" #username/>
+	<input type="text" placeholder="Password" #password/>
+	<input type="text" placeholder="Nome" #nome/>
+	<input type="text" placeholder="cognome" #cognome/>
+	<button (click)="username.value = ''; password.value=''">Registrati</button>
+	<a routerLink="/login">Torna al login</a>
+	<div></div>
+</div>

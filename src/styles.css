@@ -1,1 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
+/*font preso da https://www.dafont.com/star-jedi.font l'autore conferma che è un freeware*/
+@font-face {
+    font-family: "Starjedi";
+    src: url('/assets/font/Starjedi.ttf');
+}
