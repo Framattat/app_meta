@@ -12,7 +12,7 @@ export class PianetiComponent  {
 	constructor(private db: DbService, private router: Router) {}
 
 	pianeti: any = [];
-	pagina_attuale: number = 1;
+	pagina_attuale: string = '1';
 	btn_indietro: string = "";
 	btn_avanti: string = "";
 	scorrimento: any = [];
@@ -34,6 +34,8 @@ export class PianetiComponent  {
 	}
 	page_change(endpoint:string){
 		var endpoint_finale = endpoint.split("?");
+		var n_pagina = endpoint_finale[1].split('=');
+		this.pagina_attuale = n_pagina[1];
 		console.log(endpoint_finale[1]);
 		this.get_pianeti("?"+endpoint_finale[1]);
 	}

@@ -4,6 +4,7 @@
     src: url('/assets/font/Starjedi.ttf');
 }
 
-h1{
+.navbar-brand{
     font-family: 'Starjedi';
+    font-size: 2.5rem;
 }

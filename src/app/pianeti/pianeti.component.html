@@ -38,20 +38,25 @@
                         <div class="col-2">
                             {{pianeta.terrain}}
                         </div>
+                        <!-- Ng if applicabile a tutti i dati se non restituiscono risultati -->
                         <div class="col-3">
-                            <div *ngIf="pianeta.films.length>0">
+                            <div *ngIf="pianeta.films.length>0; else film_not">
                                 <div *ngFor="let film of pianeta.films">
                                     {{film}}
                                 </div>
                             </div>
+                            <ng-template #film_not>Film non trovato</ng-template>
                         </div>
                     </div>
                 </div>
                 <hr>
             </div>
         </div>
-        <div class="row align-items-center">
-            Pagina {{pagina_attuale}}
+        <hr>
+        <div class="row align-items-center p-4" >
+            <div class="col">
+                Pagina {{pagina_attuale}}
+            </div>
         </div>
     </div>
 </div>
