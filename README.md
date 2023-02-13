@@ -15,3 +15,4 @@ Alcune feature che potevano essere sviluppate possono essere le seguenti:
 - Purtroppo avendo approcciato Angular soltanto come corso universitario, le feature presentate sono poche (rispetto alla consegna ci sono pochi sviluppi secondo la mia opinione).
 - In ogni caso tutte le funzionalità descritte sono state eseguite con successo in un progetto PHP presente come repo nella mia pagina github. Questo per specificare le idee e la poca pratica presentate qua sopra (le stesse idee sono implementate con PHP, ma per poterle fare in Angular ho bisogno di più tempo e di studio del Framework più approfondito).
 - Alcune funzionalità sono accennate (le guard, login etc.) e soltanto una funzionalità richiesta nelle specifiche non sono riuscito a svilupparla (la ricerca nella pagina dei pianeti) anche se ho cercato online un metodo per poterla implementare (con i cosidetti "Pipe").
+- Resto disponibile per qualsiasi chiarimento o colloquio tecnico!
