@@ -1,1 +1,59 @@
-<p>pianeti works!</p>
+<div class="container">
+    <div class="shadow-lg col-12 card text-white bg-dark text-center">
+        <div class="row align-items-center py-2">
+            <h2 class="text-white mb-3">Pianeti:</h2>
+            <div class="col">
+                <button class="btn w-50 btn-primary" [disabled] = "!scorrimento[0]" (click)="page_change(scorrimento[0])" >Indietro</button>
+            </div>
+            <!-- Filtro da implementare -->
+            <div class="col">
+                <input type="text" name="filtro" placeholder="Cerca">
+            </div>
+            <div class="col">
+                <button class="btn w-50 btn-primary" [disabled] = "!scorrimento[1]" (click)="page_change(scorrimento[1])">Avanti</button>
+            </div>
+        </div>
+        <div class="row px-4 mt-3">
+            <div class="col-2">Pianeta</div>
+            <div class="col-2">Popolazione</div>
+            <div class="col-2">Diametro</div>
+            <div class="col-2">Terreno</div>
+            <div class="col-3">Film in cui compare</div>
+        </div>
+        <hr>
+        <div class="container" style="overflow-y: scroll; height: 350px">
+            <div *ngFor="let pianeta of pianeti; index as i">
+                <!-- estrarre Nome, Popolazione, Diametro, Terreno, Film -->
+                <div class="card-body p-3">
+                    <div class="row">
+                        <div class="col-2">
+                            {{pianeta.name}}
+                        </div>
+                        <div class="col-2">
+                            n. {{pianeta.population}}
+                        </div>
+                        <div class="col-2">
+                            {{pianeta.diameter}} m.
+                        </div>
+                        <div class="col-2">
+                            {{pianeta.terrain}}
+                        </div>
+                        <div class="col-3">
+                            <div *ngIf="pianeta.films.length>0">
+                                <div *ngFor="let film of pianeta.films">
+                                    {{film}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            Pagina {{pagina_attuale}}
+        </div>
+    </div>
+</div>
+
+

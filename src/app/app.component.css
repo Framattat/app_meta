@@ -1,0 +1,11 @@
+header{
+    background-color: black;
+}
+main{
+    background-image: url("/assets/img/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+footer{
+    background-color: black;
+}
