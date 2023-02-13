@@ -3,7 +3,7 @@ Esercitazione sviluppata per meta group, da Lorenzo Cecio
 
 ## Documentazione aggiuntiva
 
-Alcune feature che potevano essere sviluppate possono essere le seguenti:
+Alcune feature che potevano essere sviluppate:
 - Controllo più specifico sui dati in registrazione: possibili validazioni su nomi e cognomi, non devono contenere numeri, trim e lowercase dei campi quando inseriti nel database (tralasciando pw), encrypting della password e creazione di una sessione alla registrazione avvenuta con successo.
 - Sviluppare un vero e proprio login, con sessione tramite token (l'app permette l'implementazione grazie alla cartella Auth creata).
 - Gestire meglio le animazioni e stile del sito.
@@ -13,6 +13,6 @@ Alcune feature che potevano essere sviluppate possono essere le seguenti:
 
 ## Note personali
 - Purtroppo avendo approcciato Angular soltanto come corso universitario, le feature presentate sono poche (rispetto alla consegna ci sono pochi sviluppi secondo la mia opinione).
-- In ogni caso tutte le funzionalità descritte sono state eseguite con successo in un progetto PHP presente come repo nella mia pagina github. Questo per specificare le idee e la poca pratica presentate qua sopra (le stesse idee sono implementate con PHP, ma per poterle fare in Angular ho bisogno di più tempo e di studio del Framework più approfondito).
+- In ogni caso tutte le funzionalità aggiuntive descritte nel paragrafo prima, sono state eseguite con successo in un progetto PHP presente come repo nella mia pagina github. Questo per specificare che le idee per lo sviluppo sono presenti (le stesse idee sono implementate con PHP, ma per poterle fare in Angular ho bisogno di più tempo e di studio del Framework più approfondito).
 - Alcune funzionalità sono accennate (le guard, login etc.) e soltanto una funzionalità richiesta nelle specifiche non sono riuscito a svilupparla (la ricerca nella pagina dei pianeti) anche se ho cercato online un metodo per poterla implementare (con i cosidetti "Pipe").
 - Resto disponibile per qualsiasi chiarimento o colloquio tecnico!
